@@ -56,7 +56,7 @@ Cloudflare provides HTTPS after the domain is active. Do not remove unrelated DN
 ## 5. Final launch checks
 
 - Confirm `info@rideauneurallabs.com` is a working mailbox or route before publishing it.
-- Send a test enquiry from a desktop and phone.
+- Test the contact email link from a desktop and phone.
 - Confirm the canonical URL in `index.html`, `src/App.tsx`, `public/robots.txt`, and `public/sitemap.xml` matches the final domain.
 - Decide whether the `pages.dev` hostname should redirect to the custom domain.
 - Add privacy or accessibility statements when organizational or legal requirements are confirmed.

@@ -82,7 +82,7 @@ function Layout({ children }: { children: ReactNode }) {
           <p className="footer-mission">{mission}</p>
           <div className="footer-contact">
             <a href="mailto:info@rideauneurallabs.com">info@rideauneurallabs.com</a>
-            <p>We do not use site-form data to train models.</p>
+            <p>This website does not collect or store visitor data.</p>
           </div>
         </div>
         <div className="shell footer-base">
@@ -213,10 +213,10 @@ function About() {
 function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact" title="Start with a 30-minute scoping conversation." copy="Tell us what is slowing the organization down and which constraints—privacy, security, residency, or capacity—need to shape the work." />
+      <PageIntro eyebrow="Contact" title="A practical first conversation." copy="Email us at info@rideauneurallabs.com or start with a 30-minute scoping conversation." />
       <section className="section section--white section--flush"><div className="shell contact-grid">
-        <aside className="contact-details" aria-label="Contact details"><p className="eyebrow">Direct contact</p><h2>Ottawa, Ontario</h2><a href="mailto:info@rideauneurallabs.com">info@rideauneurallabs.com</a><p>Email directly if your organization does not permit web forms.</p><div className="privacy-note"><strong>Your information stays yours.</strong><p>We do not use site-form data to train models. This v1 form opens your email application; the website stores no form data.</p></div></aside>
-        <form className="contact-form" action="mailto:info@rideauneurallabs.com?subject=Rideau%20Neural%20Labs%20enquiry" method="post" encType="text/plain"><div className="field-row"><div className="field"><label htmlFor="name">Name</label><input id="name" name="Name" autoComplete="name" required /></div><div className="field"><label htmlFor="organization">Organization</label><input id="organization" name="Organization" autoComplete="organization" required /></div></div><div className="field"><label htmlFor="email">Email</label><input id="email" name="Email" type="email" autoComplete="email" required /></div><div className="field"><label htmlFor="need">What do you need?</label><select id="need" name="Need" defaultValue="Not sure"><option>Responsible AI adoption</option><option>Knowledge assistant</option><option>Workflow automation</option><option>Training or workshop</option><option>Data, reporting, or portal</option><option>Not sure</option></select></div><div className="field"><label htmlFor="message">Message</label><textarea id="message" name="Message" rows={6} required placeholder="A short description of the opportunity, the people involved, and any important constraint." /></div><button className="button" type="submit">Request a conversation <Arrow /></button><p className="form-note">Submitting opens your default email application. No information is stored by this website.</p></form>
+        <aside className="contact-details" aria-label="Contact details"><p className="eyebrow">Direct contact</p><h2>Ottawa, Ontario</h2><a href="mailto:info@rideauneurallabs.com">info@rideauneurallabs.com</a><p>Serving businesses, education, and community organizations from Canada’s capital.</p><div className="privacy-note"><strong>Your information stays yours.</strong><p>No visitor data is collected or stored by this website.</p></div></aside>
+        <div className="contact-card"><p className="eyebrow">Start a conversation</p><h2>Bring the problem, not a polished brief.</h2><p>Share the process, document pile, or operational challenge you want to improve, along with any privacy, security, or capacity constraints.</p><a className="button" href="mailto:info@rideauneurallabs.com?subject=Rideau%20Neural%20Labs%20enquiry">Email Rideau Neural Labs <Arrow /></a><p className="contact-note">This link opens your default email application. The website does not collect or store visitor information.</p></div>
       </div></section>
     </>
   )

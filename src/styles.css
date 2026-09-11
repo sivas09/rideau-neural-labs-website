@@ -138,14 +138,11 @@ h3 { font-size: 1.35rem; margin-bottom: 12px; }
 .privacy-note { margin-top: 56px; padding-top: 26px; border-top: 1px solid var(--line); }
 .privacy-note strong { color: var(--navy); }
 .privacy-note p { margin-top: 8px; color: var(--slate); font-size: 0.86rem; }
-.contact-form { display: grid; gap: 22px; }
-.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.field { display: grid; gap: 8px; }
-.field label { color: var(--navy); font-size: 0.78rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
-.field input, .field select, .field textarea { width: 100%; border: 1px solid #c8c2b8; border-radius: 2px; background: var(--white); color: var(--ink); padding: 13px 14px; }
-.field textarea { min-height: 170px; resize: vertical; }
-.field input:focus, .field select:focus, .field textarea:focus { outline: 3px solid rgba(20,104,104,0.2); border-color: var(--teal); }
-.form-note { margin: -8px 0 0; color: var(--slate); font-size: 0.78rem; }
+.contact-card { align-self: start; border: 1px solid var(--line); background: var(--paper); padding: clamp(30px, 5vw, 52px); }
+.contact-card h2 { max-width: 16ch; margin-block: 12px 18px; }
+.contact-card > p:not(.eyebrow) { max-width: 58ch; color: var(--slate); }
+.contact-card .button { margin-top: 30px; }
+.contact-card .contact-note { margin-top: 16px; font-size: 0.78rem; }
 
 .callout { border-top: 1px solid var(--line); }
 .callout__inner { text-align: center; }
@@ -208,7 +205,6 @@ h3 { font-size: 1.35rem; margin-bottom: 12px; }
   .evidence-grid > div:first-child { grid-column: auto; }
   .evidence-card { min-height: 0; }
   .page-intro { padding-block: 82px 94px; }
-  .field-row { grid-template-columns: 1fr; }
   .contact-grid { padding-block: 64px 82px; }
   .footer-grid > div:first-child { grid-column: auto; }
   .footer-contact { text-align: left; }

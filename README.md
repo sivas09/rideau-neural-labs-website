@@ -61,7 +61,7 @@ Before launch, confirm the final domain and business email, verify that `info@ri
 
 - The hero is an original AI-generated interpretation of the Rideau Canal at dawn. Its provenance is disclosed on the page.
 - The favicon is a project-local SVG placeholder.
-- The contact form uses `mailto:` and stores no data. Replace it with an approved form service or a Cloudflare Pages Function only when a server-side workflow is requested.
+- The contact page uses a standard email link and has no web form. The site does not collect or store visitor data.
 
 ## Repository policy
 
