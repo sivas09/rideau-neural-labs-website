@@ -4,6 +4,8 @@ Rideau Neural Labs is an Ottawa-based applied AI practice. It helps Canadian bus
 
 This repository contains the public website. It is a static React and TypeScript application built with Vite and prepared for Git-based deployment on Cloudflare Pages. It has no backend, database, analytics, or secrets.
 
+The checked-in `wrangler.jsonc` records `./dist` as the Pages build output directory. The build also verifies that deployed HTML references compiled `/assets/` bundles rather than `/src/main.tsx`.
+
 ## Run locally
 
 Requirements: Node.js 22 and npm.
@@ -44,6 +46,8 @@ Use these build settings:
 | Node.js version | `22` |
 
 No environment variables are required. Cloudflare Pages will build every push to `main` and create preview deployments for other branches and pull requests.
+
+Do not leave the Cloudflare build command or output directory blank. An empty build configuration uploads the repository source, which browsers cannot execute as a production React application.
 
 Detailed setup and domain instructions are in [docs/deployment.md](docs/deployment.md).
 

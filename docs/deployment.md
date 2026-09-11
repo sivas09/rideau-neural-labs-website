@@ -25,6 +25,12 @@ No backend, database bindings, secrets, or environment variables are required.
 
 Cloudflare Pages copies `public/_headers` and `public/_redirects` into the deployment. The redirect file preserves the React routes on direct visits and refreshes. The headers file adds baseline browser security headers and caching rules.
 
+The same output directory is recorded in `wrangler.jsonc`. Keep the dashboard build command set to `npm run build`; `pages_build_output_dir` does not replace the Vite build step.
+
+### Blank-page diagnostic
+
+If the live page is blank, view its HTML source. A production deployment must reference hashed files under `/assets/`. If it references `/src/main.tsx`, Cloudflare uploaded the repository root instead of the Vite build. Set the build command to `npm run build`, set the output directory to `dist`, and redeploy the latest `main` commit.
+
 ## 3. Verify the generated Pages domain
 
 After the first deployment, open the generated `*.pages.dev` address and verify:
