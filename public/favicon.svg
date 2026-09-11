@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Rideau Neural Labs">
+  <rect width="32" height="32" rx="2" fill="#f4f1ea"/>
+  <path d="M5 5.5h10.1c6 0 9.7 2.6 9.7 7.2 0 3.2-1.9 5.4-5.1 6.4l6 7.4h-5.2l-5.2-6.7h-5.8v6.7H5v-21Zm4.5 3.8v6.9h5.4c3.4 0 5.3-1.1 5.3-3.5s-1.9-3.4-5.3-3.4H9.5Z" fill="#1b2a4a"/>
+  <rect x="5" y="28" width="22" height="1" fill="#c4a574"/>
+</svg>

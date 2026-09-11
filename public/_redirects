@@ -1,0 +1,7 @@
+/work.html /work 301
+/about.html /about 301
+/contact.html /contact 301
+/work /work/index.html 200
+/about /about/index.html 200
+/contact /contact/index.html 200
+/* /index.html 200
